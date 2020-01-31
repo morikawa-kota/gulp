@@ -1,0 +1,20 @@
+extend /layout/_layout
+append variables
+  //- Required
+  - var pageTitle= "メニュー";
+  - var pageDescription= site.description;
+  - var pageKeywords= site.keywords;
+  //- Optional
+  - var pageOgpTitle= "メニュー";
+  - var pageOgpImage= site.ogpImage
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= relativePath;
+  //- ラインナップで表示する商品数を制御するフラグ
+  - var showLineupAll = true;
+  //- 「〜はこちら」の導線を出し分けるフラグ
+  - var isLineupPage = true;
+
+block content
+  include /object/project/_menu

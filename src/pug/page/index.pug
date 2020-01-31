@@ -1,0 +1,39 @@
+extend /layout/_layout
+append variables
+  //- Required
+  - var pageTitle= "トップ";
+  - var pageDescription= site.description;
+  - var pageKeywords= site.keywords;
+  //- Optional
+  - var pageOgpTitle= "トップ";
+  - var pageOgpImage= site.ogpImage
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= relativePath;
+  //- ラインナップで表示する商品数を制御するフラグ
+  - var showLineupAll = false;
+
+
+block content
+  main
+    div.l-super__bg
+      section.p-heroArea
+        div.p-heroArea__inner
+          div.p-heroArea__top-image-wrapper
+            img.p-heroArea__background-image(src="./assets/img/kodawari.jpg" alt="カレーパンの背景画像")
+            div.p-heroArea__text
+              h1.p-heroArea__title
+                span ブーランジェリー・つちや
+                br
+                | boulangerie Tsuchiya
+              p.p-heroArea__description
+                | 本場フランスで修行した店主の
+                br
+                | こだわり抜いた製法と国産小麦を使用した
+                br
+                | パン屋さん
+              img.p-heroArea__logo(src="./assets/img/logo.png" alt="ブーランジェリーつちやのロゴ")
+              p.p-heroArea__since - Since 2016 -
+      include /object/project/_menu
+      include /object/project/_access

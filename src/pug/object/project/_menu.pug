@@ -1,0 +1,26 @@
+include /object/component/_viewMoreLink
+include /object/component/_itemCard-s
+include /object/component/_itemCard-m
+include /constants/_items
+
+section.p-lineup
+  div.p-lineup__inner
+    h2.p-lineup__title 
+    ul.p-lineup__cards
+      if (showLineupAll)
+          each item, index in items
+            if (index === 0)
+              +itemCard-m(item.itemName, item.description, item.price, item.imgUrl)
+            else
+              +itemCard-s(item.itemName, item.description, item.price, item.imgUrl)
+      else
+        - i = 0;
+          while i < 5
+            if (i === 0)
+              +itemCard-m(items[i]['itemName'], items[i]['description'], items[i]['price'], items[i]['imgUrl'])
+              - i++
+            else
+              +itemCard-s(items[i]['itemName'], items[i]['description'], items[i]['price'], items[i]['imgUrl'])
+              - i++
+    - if (!isLineupPage)
+      +viewMoreLink('', './lineup.html', 'p-lineup__view-more')

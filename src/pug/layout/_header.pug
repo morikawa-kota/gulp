@@ -1,0 +1,30 @@
+-
+  var pages = [
+    {
+      name: "トップ",
+      url: "./index.html"
+    },
+    {
+      name: "メニュー",
+      url: "./lineup.html"
+    },
+    {
+      name: "店舗情報",
+      url: "./contact.html"
+    }
+  ]
+
+header.l-header
+  nav.l-header__nav
+    ul.l-header__lists
+      each page in pages
+        if (page.url === "./lineup.html")
+          li: a.l-header__list(href=page.url)= page.name
+        else
+          li: a.l-header__list(href=page.url)= page.name
+  div.p-newsArea
+        div.p-newsArea__inner
+          a(href="#news-modal", rel="", id="newsLink")
+            p.p-newsArea__title#newsText
+  include /object/component/_modal
+  +modal('./assets/img/qoupon.jpg')

@@ -1,0 +1,8 @@
+//- モーダル非表示中 11/22
+mixin modal(imgpath)
+  div(class="modal")
+    div(class="c-modal__wrapper")
+      img(src="./assets/img/load.png", data-src=`${imgpath}`, class="lazyload" alt="ロード中画像")
+    a(class="p-line-at__add-friend", href="https://line.me/R/ti/p/%40vmm9711g", target="_blank")
+      img(src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png", height="36", border="0" alt="イメージ")
+    a(href="#", rel="modal:close")

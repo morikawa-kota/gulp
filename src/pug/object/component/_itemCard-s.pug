@@ -1,0 +1,10 @@
+mixin itemCard-s(itemName, description, price, imgUrl)
+  li.c-item-card-s
+    a.c-item-card-s__content
+      div.c-item-card-s__image-wrapper
+        img(src="./assets/img/load.png", data-src=imgUrl, class="c-item-card-s__image lazyload" alt=itemName)
+      div.c-item-card-s__text
+        h3.c-item-card-s__text__title #{itemName}
+        //- 商品説明のテキストがないのでとりあえずコメントアウト
+        //- p #{description}
+        p.c-item-card-s__text__price #[span #{price}円](税抜)

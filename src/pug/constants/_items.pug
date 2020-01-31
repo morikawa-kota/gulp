@@ -1,0 +1,424 @@
+//- 表示する商品を定義するファイル
+//- descriptionテキストが用意されたら適切なテキストに差し替えてください
+- 
+  const items = [
+    {
+      itemName: 'げんこつパン',
+      description: 'メロンパンの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/genkotsu.png'
+    },
+    {
+      itemName: 'メロンパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/meron.png'
+    },
+    {
+      itemName: 'シナモンロール',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/cinnamon_roll.png'
+    },
+    {
+      itemName: 'レーズンパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/raisins.png'
+    },
+    {
+      itemName: 'カフェロッティ',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/cafe_lotti.png'
+    },
+    {
+      itemName: 'チョココロネ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/chocolate_corone.png'
+    },
+    {
+      itemName: '塩豆あんぱん',
+      description: 'クロワッサンの説明を簡潔にココに記載する。',
+      price: '160',
+      imgUrl: './assets/img/pan/salted_bean_bread.png'
+    },
+    {
+      itemName: 'あんぱん',
+      description: 'クロワッサンの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/anpan.png'
+    },
+    {
+      itemName: '塩あんぱん',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/salted_anpan.png'
+    },
+    {
+      itemName: 'クルミチーズ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '160',
+      imgUrl: './assets/img/pan/walnut_cheese.png'
+    },
+    {
+      itemName: '白いクリームチーズパン',
+      description: 'クリームパンの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/cream_cheese_bread.png'
+    },
+    {
+      itemName: 'フォンダンショコラ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/fondant_chocolat.png'
+    },
+    {
+      itemName: 'りんごパイ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '220',
+      imgUrl: './assets/img/pan/apple_pie.png'
+    },
+    {
+      itemName: 'きなこパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/kinako_bread.png'
+    },
+    {
+      itemName: 'あんドーナツ',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/ann_donut.png'
+    },
+    {
+      itemName: 'リングドーナツ',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '90',
+      imgUrl: './assets/img/pan/ring_donut.png'
+    },
+    {
+      itemName: '明太ソーセージロール',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '160',
+      imgUrl: './assets/img/pan/mentai_sausage_roll.png'
+    },
+    {
+      itemName: '野菜のチリソースパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/mentai_sausage_roll.png'
+    },
+    {
+      itemName: 'チーズ入りキーマカレーパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/keema_curry_bread_with_cheese.png'
+    },
+    {
+      itemName: '塩パン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/salt_bread.png'
+    },
+    {
+      itemName: 'クリームパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/cream_bread.png'
+    },
+    {
+      itemName: 'うぐいすパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/uguisu_bread.jpg'
+    },
+    {
+      itemName: 'もちっとナン明太子',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/mentaiko_nan.png'
+    },
+    {
+      itemName: 'もちっとナンカレー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/nan_curry.png'
+    },
+    {
+      itemName: 'ミニパン詰め合わせ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/assorted_bread.png'
+    },
+    {
+      itemName: 'クロワッサンサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '230',
+      imgUrl: './assets/img/pan/croissant_sandwiches.png'
+    },
+    {
+      itemName: 'もち麦玄米パン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/rice_bread.png'
+    },
+    {
+      itemName: 'ロールパン 3個セット',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/roll_bread.png'
+    },
+    {
+      itemName: 'ラスク各種',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '100',
+      imgUrl: './assets/img/pan/rusks.png'
+    },
+    {
+      itemName: 'のりチーズサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/nori_cheese.png'
+    },
+    {
+      itemName: '三種のサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '270',
+      imgUrl: './assets/img/pan/3kinds_of_sandwiches.png'
+    },
+    {
+      itemName: '野菜たっぷりたまごとハムのサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/eggs_ham_sandwiches.png'
+    },
+    {
+      itemName: '食パン1斤',
+      description: 'メロンパンの説明を簡潔にココに記載する。',
+      price: '260',
+      imgUrl: './assets/img/pan/shokupan2.jpg'
+    }
+  ];
+
+
+
+  //- 未対応の商品リスト
+  const _items = [
+    {
+      itemName: '厚切り玉子サンド',
+      description: 'クリームパンの説明を簡潔にココに記載する。',
+      price: '250',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'チーズコーンパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '160',
+      imgUrl: './assets/img/pan/cheese_corn.jpg'
+    },
+    {
+      itemName: 'あんぱん（こし）',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'イギリスパン一斤',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '290',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '海老カツバーガー',
+      description: 'メロンパンの説明を簡潔にココに記載する。',
+      price: '220',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'お任せミニパン5個入り',
+      description: 'クリームパンの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '辛口ソーセージドッグ',
+      description: 'クロワッサンの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'キーマカレーパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'クロワッサン',
+      description: 'メロンパンの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'クロワッサンサンド',
+      description: 'クリームパンの説明を簡潔にココに記載する。',
+      price: '230',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'クィーンシュー',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'クイニーアマン',
+      description: 'クロワッサンの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'パンドガンパーニュ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '400',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'ハンバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '230',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '白身魚バーガー（四角）',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '230',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'ソフトフランスチョコクランチ',
+      description: 'クロワッサンの説明を簡潔にココに記載する。',
+      price: '150',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'ソフトフランス練乳',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'チキンカツバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '照焼チキンサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '300',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'とろけるチーズケーキ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'バジルソーセージパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '5種のミックスサンド',
+      description: 'メロンパンの説明を簡潔にココに記載する。',
+      price: '300',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'コロネ',
+      description: 'クリームパンの説明を簡潔にココに記載する。',
+      price: '140',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'フライドチキンバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '260',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'フランスパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '300',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'ミックスサンド',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '280',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '蒸しパン（モンブラン）',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '130',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'メンチカツバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '230',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: '野菜のピザ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '180',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },
+    {
+      itemName: 'ロールパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '60',
+      imgUrl: './assets/img/pan/pan.jpg'
+    },    {
+      itemName: 'クルミショコラ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '160',
+      imgUrl: './assets/img/pan/.jpg'
+    },
+    {
+      itemName: 'もちっとミニ明太チーズ',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '50',
+      imgUrl: './assets/img/pan/mentaiko_cheese.jpg'
+    },
+    {
+      itemName: 'コロッケパン',
+      description: 'あんぱんの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/croquettepan.jpg'
+    },
+    {
+      itemName: 'ハムエッグバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/hamandeggs.jpg'
+    },
+    {
+      itemName: 'ハムカツバーガー',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/hamcutletpan.jpg'
+    },
+    {
+      itemName: '焼きそばパン',
+      description: 'チョココルネの説明を簡潔にココに記載する。',
+      price: '200',
+      imgUrl: './assets/img/pan/yakisobapan.jpg'
+    }
+  ];
